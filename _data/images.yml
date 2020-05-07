@@ -1,0 +1,8 @@
+- name: 01
+  image: bg-01.jpg
+- name: 02
+  image: bg-02.jpg
+- name: 03
+  image: bg-03.jpg
+- name: 04
+  image: bg-04.jpg

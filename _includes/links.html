@@ -1,0 +1,8 @@
+<footer id="{{post.title}}" class="vh-75-ns bg-dark-gray moon-gray pv3 flex-ns flex-column-ns justify-center items-start">
+	{% for item in site.data.links %}
+    <a href="{{ item.link }}" class="no-underline white pa3 ml5">
+      {{ item.name }}
+    </a>
+	{% endfor %}
+
+</footer>

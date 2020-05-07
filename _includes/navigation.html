@@ -1,0 +1,7 @@
+<nav id="navigation" class="bg-dark-gray moon-gray flex-ns w-100 fixed">
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}"  class="no-underline white pa3{% if page.url == item.link %} bg-dark-blue white {% endif %}">
+      {{ item.name }}
+    </a>
+  {% endfor %}
+</nav>
