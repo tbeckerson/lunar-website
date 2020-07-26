@@ -37,4 +37,11 @@ padding-bottom: 1rem;
   #close_menu:checked ~ #menu_items {
   display:none;
   }
-
+@media only screen and (min-width: 480px)
+{
+ #menu_items {
+ display:flex;
+ }
+ #open_toggle,#close_toggle {
+ display:none;
+ }
