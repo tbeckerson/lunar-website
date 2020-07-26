@@ -1,0 +1,21 @@
+* {
+margin:0;
+padding:0;
+}
+body {
+scroll-behaviour:smooth;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family:'Saira Condensed',sans-serif;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+.bg-fix {
+background-attachment: fixed;
+}
+.bg-animate, .bg-animate:hover, .bg-animate:focus {
+    transition: background-color .15s ease-in-out;
+}
+p {
+padding-top: 1rem;
+padding-bottom: 1rem;

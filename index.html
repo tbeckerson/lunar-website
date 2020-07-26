@@ -1,51 +1,46 @@
 ---
-layout: default
-title: Home
+layout: main
+title: Lunar Linux
+
 ---
 
-<header class="pv7 bg-black-70 flex flex-column items-center justify-start">
-<img class="w-50-ns w-90 mt-auto" src="images/logo-01.png" alt="lunar linux logo"/>
-<h3 class="txf-titleb pv3 near-white tracked">A Source Based Distribution</h3>
+<header id="masthead" class="w-100 vh-100 bg-black-30 flex flex-column items-center justify-center">
+  <img src="/assets/images/logo-02b.png" class="w-75" alt="The Lunar Linux logo - a rockhead penguin shillouette in front of a crescent moon."/>
+  <h2 class="moon-gray tracked tc">A source-based Linux distribution</h2>
 </header>
 
-<section id="" class="vh-25 bg-black-70 flex flex-column items-center justify-end">
-<img class="w2-ns w-25 mt2" style="
-animation-name:downarrow; animation-duration:2s; animation-timing-function: linear; animation-iteration-count: infinite;" src="images/down.png" alt="scroll down arrow" />
-</section>
-<main id="" style="background-image: url('images/moonscape-01.png')" class="contain bg-center bg-moon-gray bg-center flex-ns flex-column-ns items-center-ns">
+<main id="content-wrapper" style="background-image:url('/assets/images/bg-05.jpg')" class="bg-center cover w-100">
 
-{% for post in site.posts reversed %}
+<section id="about" class="bg-moon-gray ph2 pv4 tracked" style="">
+{% capture about_include %}
+{% include about.md %}
+{% endcapture %}
+{{ about_include | markdownify }}
+</section>
 
-    {% if post.title == 'about' %}
-<section id="{{post.title}}" class="w-100-ns bg-dark-gray moon-gray pv7 ph2 flex-ns flex-column-ns justify-center items-center">
-        <h2 id="" class="leading txls-wide txf-titleb pv2">{{post.title}}</h2>
-    {{post.content}}
+<section id="twocol" class="bg-black-70 moon-gray pv5 w-100 flex flex-column items-top">
+<div id="twocol-left" class="tracked w-50-ns ph2 pv4">
+{% capture apps_include %}
+{% include applications.md %}
+{% endcapture %}
+{{ apps_include | markdownify }}
+</div>
+<div id="twocol-right" class="w-50-ns ph2 flex flex-row items-center justify-around">
+
+</div>
 </section>
-  {% elsif post.title contains 'highlight' %}
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-<section id="{{post.title}}" class="w-100-ns cover dark-gray pv5 flex flex-column flex-row-ns justify-center items-center">
-    <div id="{{post.title}}-text" class="w-40 pa3 {% if thecycle == 'odd' %} order-0-ns {% else %} order-1-ns {% endif %}">
-        <h2 id="" class="leading txls-wide txf-titleb pv2">{{post.title}}</h2>
-    {{post.content}}
-    </div>
-    <div id="{{post.title}}-image" class="w-40 pa1 tc {% if thecycle == 'even' %} order-0-ns {% else %} order-1-ns {% endif %}">
-    <img class="w-75-ns tc" src="images/{{post.highlight-image}}" alt="{{post.highlight-alt}}"/>
-    </div>
+
+<section id="download" class="bg-moon-gray ph2 pv4 tracked">
+{% capture dl_include %}
+{% include download.md %}
+{% endcapture %}
+{{ dl_include | markdownify }}
 </section>
-    {% else %}
-<section id="{{post.title}}-text" class="w-100-ns pv7 bg-dark-gray moon-gray pv1 flex-ns flex-column-ns justify-center items-center">
-        <h2 id="" class="leading txls-wide txf-titleb pv2">{{post.title}}</h2>
-       {{post.content}}
-</section>
-    {% endif %}
-{% endfor %}
 </main>
 
-<footer id="links" class="bg-black-70 moon-gray pv6 flex flex-row-ns flex-column justify-center items-start">
-    {% for item in site.data.links %}
-    <a href="{{ item.link }}" class="no-underline white pa3 ml5">
-      {{ item.name }}
-    </a>
-    {% endfor %}
-
+<footer id="links" class="bg-black-70 moon-gray ph2 pv4 tracked">
+{% capture links_include %}
+{% include links.md %}
+{% endcapture %}
+{{ links_include | markdownify }}
 </footer>
