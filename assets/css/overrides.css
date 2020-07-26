@@ -37,6 +37,7 @@ padding-bottom: 1rem;
   #close_menu:checked ~ #menu_items {
   display:none;
   }
+/* media query to disable the hamburger */
 @media only screen and (min-width: 480px)
 {
  #menu_items {
