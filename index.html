@@ -4,7 +4,7 @@ title: Lunar Linux
 
 ---
 
-<nav id="navigation" class="w-100 pa3 bg-black flex flex-row items-end">
+<nav id="navigation" class="fixed top-0 w-100 pa3 bg-black flex flex-row items-end">
   {% for item in site.data.navigation %}
     <a class="bg-hover-white bg-animate ph3" href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
       {{ item.name }}
