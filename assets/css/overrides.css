@@ -13,6 +13,9 @@ padding-bottom: 1rem;
 .bg-fix {
 background-attachment: fixed;
 }
+.pos-fix {
+    position:fixed;
+}
 .bg-animate, .bg-animate:hover, .bg-animate:focus {
     transition: background-color .15s ease-in-out;
 }
