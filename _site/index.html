@@ -15,12 +15,12 @@
     href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
     />
     <link
-    href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap"
+    href="https://fonts.googleapis.com/css3?family=Saira+Condensed:wght@500"
     rel="stylesheet"
     /> 
     <link
     rel="stylesheet" 
-    href="/assets/css/overrides.css"
+    href="./assets/css/overrides.css"
     />
 <style>
 </style>
@@ -36,8 +36,24 @@
 <!-- End Jekyll SEO tag -->
 
   </head>
-  <body id="" style="background-image:url('/assets/images/bg-06.jpg')" class="bg-fix cover bg-black-30 w-100 h-100 dark-gray">
-    <header id="masthead" class="w-100 vh-100 bg-black-30 flex flex-column items-center justify-center">
+  <body id="" style="background-image:url('./assets/images/bg-06.jpg')" class="f5 sans-serif bg-fix cover bg-black-30 w-100 h-100 dark-gray">
+    <nav id="navigation" class="w-100 pa3 bg-black flex flex-row items-end">
+  
+    <a href="/" style="color: red;">
+      HOME
+    </a>
+  
+    <a href="/docs.html" >
+      DOCUMENTATION
+    </a>
+  
+    <a href="https://github.com/lunar-linux/" >
+      GITHUB
+    </a>
+  
+</nav>
+
+<header id="masthead" class="w-100 vh-100 bg-black-30 flex flex-column items-center justify-center">
   <img src="/assets/images/logo-02b.png" class="w-75" alt="The Lunar Linux logo - a rockhead penguin shillouette in front of a crescent moon."/>
   <h2 class="moon-gray tracked tc">A source-based Linux distribution</h2>
 </header>

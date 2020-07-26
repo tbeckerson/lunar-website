@@ -1,6 +1,6 @@
-- name: Home
+- name: HOME
   link: /
-- name: About
-  link: #about
-- name: Download
-  link: #download
+- name: DOCUMENTATION
+  link: /docs.html
+- name: GITHUB
+  link: https://github.com/lunar-linux/
