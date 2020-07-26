@@ -37,69 +37,138 @@
 
   </head>
   <body id="" style="background-image:url('./assets/images/bg-06.jpg')" class="f5 sans-serif bg-fix cover bg-black-30 w-100 h-100 dark-gray">
-    <nav id="navigation" class="w-100 pa3 bg-black flex flex-row items-end">
+    <nav id="navigation" class="fixed w-100 top-0">
+<!--checkbox hack for hamburger menu at small sizes-->  
+<input id="open_menu" type="checkbox" class="dn" />
+<label for="open_menu" class="f1 white ph3 pv2 bg-dark-gray">&#43;</label>
+<!--end burger menu -->
+<div id="menu_items" class="w-100 bg-dark-gray flex flex-column flex-row-ns items-center items-start-ns justify-start-ns">
+<label for="open_menu" class=" ph3 f1 white self-start">&#215;</label>
   
-    <a href="/" style="color: red;">
-      HOME
+    <a class="link underline-hover f6 pa3 f5-m f4-l white bg-animate hover-bg-moon-gray hover-dark-gray" href="">
+      DOWNLOAD
     </a>
   
-    <a href="/docs.html" >
+    <a class="link underline-hover f6 pa3 f5-m f4-l white bg-animate hover-bg-moon-gray hover-dark-gray" href="/docs.html">
       DOCUMENTATION
     </a>
   
-    <a href="https://github.com/lunar-linux/" >
+    <a class="link underline-hover f6 pa3 f5-m f4-l white bg-animate hover-bg-moon-gray hover-dark-gray" href="https://github.com/lunar-linux/">
       GITHUB
     </a>
   
+</div>
 </nav>
 
 <header id="masthead" class="w-100 vh-100 bg-black-30 flex flex-column items-center justify-center">
-  <img src="/assets/images/logo-02b.png" class="w-75" alt="The Lunar Linux logo - a rockhead penguin shillouette in front of a crescent moon."/>
-  <h2 class="moon-gray tracked tc">A source-based Linux distribution</h2>
+  <img src="./assets/images/logo-02b.png" class="w-75 w-two-thirds-m w-third-l" alt="The Lunar Linux logo - a rockhead penguin shillouette in front of a crescent moon."/>
+  <h1 class="moon-gray tracked tc">A source-based Linux distribution</h1>
 </header>
 
-<main id="content-wrapper" style="background-image:url('/assets/images/bg-05.jpg')" class="bg-center cover w-100">
+<main id="content-wrapper" style="background-image:url('./assets/images/bg-05.jpg')" class="bg-center cover w-100">
 
-<section id="about" class="bg-moon-gray ph2 pv4 tracked" style="">
+<section id="about" class="bg-moon-gray ph2 pv5 flex flex-column items-center justify-center">
+<div class="tracked w-100 w-50-ns">
 
 
 <h1 id="about">ABOUT</h1>
 
-<p><em>This is the most important part - I think it’s important to decide what the target audience for Lunar will be. It’s a source distro, so it’s not for amatuers. Is it for older machines? Servers? Can programmers use it? Should it be a learning experience like LFS, or should it be your daily desktop?</em></p>
+<p><em>This is the most important part - I think it’s valuable to decide what the target audience for Lunar will be. It’s a source distro, so it’s not for amatuers. Is it for older machines? Servers? Can programmers use it? Should it be a learning experience like LFS, or should it be your daily desktop?</em></p>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
 Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.</p>
 
 
+</div>
 </section>
 
-<section id="twocol" class="bg-black-70 moon-gray pv5 w-100 flex flex-column items-top">
-<div id="twocol-left" class="tracked w-50-ns ph2 pv4">
+<section id="applications" class="bg-black-70 moon-gray ph2 pv5 flex flex-column items-center justify-center">
+<div class="tracked w-100 w-50-ns">
 
 
 <h1 id="applications">APPLICATIONS</h1>
 
-<p><em>list of commonly used apps that everyone wants to know about - this again depends on the target audience.</em></p>
+<p><em>list of commonly used apps that everyone wants to know about - this again depends on the target audience. Either we want to reassure everyone that it has all the usual programs that every Linux distro has, or we want to show things that set it apart.</em>
+<em>Do we have applications that others don’t? Is our app list oriented to a certain type of user? For example, we have lots of command-line apps.</em></p>
 
-<p><em>Either we want to reassure everyone that it has all the usual programs that every Linux distro has, or we want to show things that set it apart. Do we have applications that others don’t?</em></p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.</p>
+<p><em>Maybe we should mention how the package manager is easy to use and the user can create their own modules for apps that aren’t included by default.</em></p>
 
 
 </div>
-<div id="twocol-right" class="w-50-ns ph2 flex flex-row items-center justify-around">
+<div class="tracked w-100 w-66-m w-50-l flex flex-wrap justify-around">
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/desktop-environment-gnome.svg" alt="GNOME" class="">
+    <figcaption>GNOME</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/desktop-environment-kde.svg" alt="KDE" class="">
+    <figcaption>KDE</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/desktop-environment-xfce.svg" alt="XFCE" class="">
+    <figcaption>XFCE</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/firefox.svg" alt="FIREFOX" class="">
+    <figcaption>FIREFOX</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/chromium-browser.svg" alt="CHROMIUM" class="">
+    <figcaption>CHROMIUM</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/digikam.svg" alt="DIGIKAM" class="">
+    <figcaption>DIGIKAM</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/gimp.svg" alt="GIMP" class="">
+    <figcaption>GIMP</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/inkscape.svg" alt="INKSCAPE" class="">
+    <figcaption>INKSCAPE</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/blender.svg" alt="BLENDER" class="">
+    <figcaption>BLENDER</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/libreoffice-base.svg" alt="LIBREOFFICE" class="">
+    <figcaption>LIBREOFFICE</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/scribus.svg" alt="SCRIBUS" class="">
+    <figcaption>SCRIBUS</figcaption>
+    </figure>
+
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/transmission.svg" alt="TRANSMISSION" class="">
+    <figcaption>TRANSMISSION</figcaption>
+    </figure>
 
 </div>
 </section>
 
-<section id="download" class="bg-moon-gray ph2 pv4 tracked">
+<section id="download" class="bg-moon-gray ph2 pv5 flex flex-column items-center justify-center">
+<div class="tracked w-100 w-50-ns">
 
 
 <h1 id="download">DOWNLOAD</h1>
 
-<p><em>Considering the rolling release nature of Lunar, users should probably be pointed to the newest nightly, rather than a year-old beta.</em></p>
+<p><em>Considering the rolling release nature of Lunar, users should probably be pointed to the newest nightly, rather than the year-old 1.8.0 release candidate.</em></p>
 
-<p><em>Or maybe there should be monthly or quarterly releases?</em></p>
+<p><em>Or maybe there should be monthly or quarterly releases? Is chasing a point release number actually useful for Lunar?</em></p>
 
 <p><em>Regardless, there should be some text here describing the difference between the stable and the nightly, and what the user can expect from each.</em></p>
 
@@ -107,10 +176,12 @@ Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu f
 <a class="link underline-hover white pa3 bg-red hover-bg-dark-red" href="/link/to/nightly.iso">Nightly</a></p>
 
 
+</div>
 </section>
 </main>
 
-<footer id="links" class="bg-black-70 moon-gray ph2 pv4 tracked">
+<footer id="links" class="bg-black-70 moon-gray ph2 pv5 tracked flex flex-column items-center justify-center">
+<div class="tracked w-100 w-50-ns">
 
 
 <h1 id="contact">CONTACT</h1>
@@ -120,9 +191,12 @@ Should there be other ways to connect? It all means extra work for someone.</em>
 
 <p><em>A generic email, like info@lunar-linux.org? Maybe setting up a telegram page? A subreddit? A facebook page? Discord?</em></p>
 
-<p><em>If the only ways to stay in touch are IRC and Github, those links will stay at the top and this section won’t be included at all.</em></p>
+<p><em>If the only ways to stay in touch are IRC and Github, those links will be put in the navbar.</em></p>
+
+<p><em>Can anything else go here? Interesting links to other websites?</em></p>
 
 
+</div>
 </footer>
 
   </body>

@@ -1,5 +1,5 @@
-- name: HOME
-  link: /
+- name: DOWNLOAD
+  link: #download
 - name: DOCUMENTATION
   link: /docs.html
 - name: GITHUB

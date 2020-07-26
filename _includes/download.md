@@ -1,8 +1,8 @@
 # DOWNLOAD
 
-_Considering the rolling release nature of Lunar, users should probably be pointed to the newest nightly, rather than a year-old beta._
+_Considering the rolling release nature of Lunar, users should probably be pointed to the newest nightly, rather than the year-old 1.8.0 release candidate._
   
-_Or maybe there should be monthly or quarterly releases?_
+_Or maybe there should be monthly or quarterly releases? Is chasing a point release number actually useful for Lunar?_
 
 _Regardless, there should be some text here describing the difference between the stable and the nightly, and what the user can expect from each._
  

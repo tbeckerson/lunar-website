@@ -4,51 +4,70 @@ title: Lunar Linux
 
 ---
 
-<nav id="navigation" class="fixed top-0 w-100 pa3 bg-black flex flex-row items-end">
+
+<nav id="navigation" class="fixed w-100 top-0">
+<!--checkbox hack for hamburger menu at small sizes-->  
+<input id="open_menu" type="checkbox" class="dn" />
+<label for="open_menu" class="f1 white ph3 pv2 bg-dark-gray">&#43;</label>
+<!--end burger menu -->
+<div id="menu_items" class="w-100 bg-dark-gray flex flex-column flex-row-ns items-center items-start-ns justify-start-ns">
+<label for="open_menu" class=" ph3 f1 white self-start">&#215;</label>
   {% for item in site.data.navigation %}
-    <a class="bg-hover-white bg-animate ph3" href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+    <a class="link underline-hover f6 pa3 f5-m f4-l white bg-animate hover-bg-moon-gray hover-dark-gray" href="{{ item.link }}">
       {{ item.name }}
     </a>
   {% endfor %}
+</div>
 </nav>
 
 <header id="masthead" class="w-100 vh-100 bg-black-30 flex flex-column items-center justify-center">
-  <img src="./assets/images/logo-02b.png" class="w-75" alt="The Lunar Linux logo - a rockhead penguin shillouette in front of a crescent moon."/>
-  <h2 class="moon-gray tracked tc">A source-based Linux distribution</h2>
+  <img src="./assets/images/logo-02b.png" class="w-75 w-two-thirds-m w-third-l" alt="The Lunar Linux logo - a rockhead penguin shillouette in front of a crescent moon."/>
+  <h1 class="moon-gray tracked tc">A source-based Linux distribution</h1>
 </header>
 
 <main id="content-wrapper" style="background-image:url('./assets/images/bg-05.jpg')" class="bg-center cover w-100">
 
-<section id="about" class="bg-moon-gray ph2 pv4 tracked" style="">
+<section id="about" class="bg-moon-gray ph2 pv5 flex flex-column items-center justify-center">
+<div class="tracked w-100 w-50-ns">
 {% capture about_include %}
 {% include about.md %}
 {% endcapture %}
 {{ about_include | markdownify }}
+</div>
 </section>
 
-<section id="twocol" class="bg-black-70 moon-gray pv5 w-100 flex flex-column items-top">
-<div id="twocol-left" class="tracked w-50-ns ph2 pv4">
+<section id="applications" class="bg-black-70 moon-gray ph2 pv5 flex flex-column items-center justify-center">
+<div class="tracked w-100 w-50-ns">
 {% capture apps_include %}
 {% include applications.md %}
 {% endcapture %}
 {{ apps_include | markdownify }}
 </div>
-<div id="twocol-right" class="w-50-ns ph2 flex flex-row items-center justify-around">
-
+<div class="tracked w-100 w-66-m w-50-l flex flex-wrap justify-around">
+{% for item in site.data.apps %}
+    <figure class="pa2 tc w-33">
+    <img src="./assets/images/apps/{{ item.icon }}" alt="{{ item.name }}" class="">
+    <figcaption>{{ item.name }}</figcaption>
+    </figure>
+{% endfor %}
 </div>
 </section>
 
-<section id="download" class="bg-moon-gray ph2 pv4 tracked">
+<section id="download" class="bg-moon-gray ph2 pv5 flex flex-column items-center justify-center">
+<div class="tracked w-100 w-50-ns">
 {% capture dl_include %}
 {% include download.md %}
 {% endcapture %}
 {{ dl_include | markdownify }}
+</div>
 </section>
 </main>
 
-<footer id="links" class="bg-black-70 moon-gray ph2 pv4 tracked">
+<footer id="links" class="bg-black-70 moon-gray ph2 pv5 tracked flex flex-column items-center justify-center">
+<div class="tracked w-100 w-50-ns">
 {% capture links_include %}
 {% include links.md %}
 {% endcapture %}
 {{ links_include | markdownify }}
+</div>
 </footer>

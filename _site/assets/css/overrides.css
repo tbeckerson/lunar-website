@@ -1,6 +1,9 @@
+
+
 * {
 margin:0;
 padding:0;
+font-size: 100%;
 }
 body {
 scroll-behaviour:smooth;
@@ -14,8 +17,24 @@ padding-bottom: 1rem;
 background-attachment: fixed;
 }
 .bg-animate, .bg-animate:hover, .bg-animate:focus {
-    transition: background-color .15s ease-in-out;
+transition: background-color .1s ease-in-out;
 }
 p {
 padding-top: 1rem;
 padding-bottom: 1rem;
+}
+
+/* collapsable menu toggle */
+  #menu_items {
+  display:none;
+  }
+  #open_menu:checked ~ label {
+  display:none;
+  }
+  #open_menu:checked ~ #menu_items {
+  display:flex;
+  }
+  #close_menu:checked ~ #menu_items {
+  display:none;
+  }
+
