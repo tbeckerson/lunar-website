@@ -5,7 +5,7 @@ margin:0;
 padding:0;
 font-size: 100%;
 }
-body {
+html {
 scroll-behaviour:smooth;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -25,27 +25,27 @@ padding-bottom: 1rem;
 }
 
 /* collapsable menu toggle */
-  #menu_items {
+  #menu_toggle, #menu_items {
+  display:none;
+}
+  #menu_toggle:checked ~ #open_button {
   display:none;
   }
-  #open_menu:checked ~ label {
-  display:none;
+  #menu_toggle:checked ~ #menu_items {
+  display: flex;
   }
-  #open_menu:checked ~ #menu_items {
-  display:flex;
-  }
-  #close_menu:checked ~ #menu_items {
-  display:none;
-  }
+
 /* media query to disable the hamburger */
-@media only screen and (min-width: 480px)
+@media only screen and (min-width: 640px)
 {
  #menu_items {
  display:flex;
  }
- #open_toggle,#close_toggle {
+ #open_button,#close_button {
  display:none;
  }
+ 
+ /* why doesn't tachyons do this automatically? */
 .grow-1
 {flex-grow:1;}
 .grow-2
