@@ -1,5 +1,5 @@
 - name: DOWNLOAD
-  link: #download
+  link: "#download"
 - name: DOCUMENTATION
   link: /docs.html
 - name: GITHUB
