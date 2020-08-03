@@ -46,3 +46,19 @@ padding-bottom: 1rem;
  #open_toggle,#close_toggle {
  display:none;
  }
+.grow-1
+{flex-grow:1;}
+.grow-2
+{flex-grow:2;}
+.grow-3
+{flex-grow:3;}
+.grow-4
+{flex-grow:4;}
+.shrink-1
+{flex-grow:1;}
+.shrink-2
+{flex-grow:2;}
+.shrink-3
+{flex-grow:3;}
+.shrink-4
+{flex-grow:4;}

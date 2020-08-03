@@ -15,13 +15,13 @@
     href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
     />
     <link
-    href="https://fonts.googleapis.com/css3?family=Saira+Condensed:wght@500"
-    rel="stylesheet"
-    /> 
-    <link
     rel="stylesheet" 
     href="./assets/css/overrides.css"
     />
+    <link
+    href="https://fonts.googleapis.com/css3?family=Saira+Condensed:wght@500"
+    rel="stylesheet"
+    /> 
 <style>
 </style>
     <!-- Begin Jekyll SEO tag v2.6.1 -->
@@ -39,24 +39,26 @@
 <!-- End Jekyll SEO tag -->
 
   </head>
-  <body id="" style=" background-image:url('./assets/images/bg-06.jpg')" class="f5 sans-serif cover bg-black-30 w-100 h-100 dark-gray">
+  <body id="" style=" background-image:url('./assets/images/bg-06.jpg')" class="bg-fix sans-serif cover bg-black-30 w-100 h-100 dark-gray">
     <nav id="navigation" class="fixed w-100 top-0">
 <!--checkbox hack for hamburger menu at small sizes-->  
-<input id="open_menu" type="checkbox" class="dn" />
-<label id="open_toggle" for="open_menu" class="f1 white ph3 pv2 bg-dark-gray">&#43;</label>
-<!--end burger menu -->
-<div id="menu_items" class="w-100 bg-dark-gray flex flex-column flex-row-ns items-center items-start-ns justify-start-ns">
-<label id="close_toggle" for="open_menu" class=" ph3 f1 white self-start">&#215;</label>
+<input id="menu_toggle" type="checkbox" class="dn" />
+<label id="open_button" for="open_menu" class="dn-ns f1 white ph3 pv2 bg-dark-gray">&#43;</label>
+<div id="menu_items" class="w-100 bg-moon-gray flex flex-column flex-row-ns items-center">
+<!--checkbox hack for hamburger menu-->
+<label id="close_button" for="open_menu" class="dn-ns ph3 f1 white self-start">&#215;</label>
+    <span class="f6 f5-m f4-l pa3 dark-gray bg-animate  grow-1" href="#masthead">LUNAR LINUX
+    </span>
   
-    <a class="link underline-hover f6 pa3 f5-m f4-l white bg-animate hover-bg-moon-gray hover-dark-gray" href="">
+    <a class="link underline-hover f6 pa3 f5-m f4-l dark-gray bg-animate hover-bg-dark-gray hover-moon-gray" href="">
       DOWNLOAD
     </a>
   
-    <a class="link underline-hover f6 pa3 f5-m f4-l white bg-animate hover-bg-moon-gray hover-dark-gray" href="/docs.html">
+    <a class="link underline-hover f6 pa3 f5-m f4-l dark-gray bg-animate hover-bg-dark-gray hover-moon-gray" href="/docs.html">
       DOCUMENTATION
     </a>
   
-    <a class="link underline-hover f6 pa3 f5-m f4-l white bg-animate hover-bg-moon-gray hover-dark-gray" href="https://github.com/lunar-linux/">
+    <a class="link underline-hover f6 pa3 f5-m f4-l dark-gray bg-animate hover-bg-dark-gray hover-moon-gray" href="https://github.com/lunar-linux/">
       GITHUB
     </a>
   
@@ -68,7 +70,7 @@
   <h1 class="moon-gray tracked tc">A source-based Linux distribution</h1>
 </header>
 
-<main id="content-wrapper" style="background-image:url('./assets/images/bg-05.jpg')" class="bg-fix bg-center cover w-100 h-100">
+<main id="content-wrapper" style="background-image:url('./assets/images/bg-05.jpg')" class="bg-center cover w-100 h-100">
 
 <section id="about" class="bg-moon-gray ph2 pv5 flex flex-column items-center justify-center">
 <div class="tracked w-100 w-50-ns">
