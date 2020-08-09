@@ -1,0 +1,25 @@
+- name: 01
+  image: logo_test-01.png
+  comment: A combination of all three items. The landers could use some improvement, but as mentioned above, I wasn't intending to keep them.
+- name: 02
+  image: logo_test-02.png
+  comment: This uses the crescent with a moon sillouette behind it.
+- name: 03
+  image: logo_test-03.png
+  comment: This is my personal choice - it's a clean design that emphasizes the LUNAR name of the project.
+- name: 04
+  image: logo_test-04.png
+  comment: This is similar to \#2 above, but with the crescent smaller and without sillouette. It's the most minimal of the set.
+- name: 05
+  image: logo_test-05.png
+  comment: It's similar to \#4, but with the small lander. As mentioned above, I don't think the lander itself really connects with the name.
+- name: 06
+  image: logo_test-06.png
+  comment: Unlike \#5, this works as a logo - the penguin ties the _linux_ to the _lunar._
+- name: 07
+  image: logo_test-07.png
+  comment: No penguin, but a very clean design.
+- name: 08
+  image: icon-01.png
+  comment: This is the logo in the navbar, and the site favicon. It's a crescent moon, with a letter "L" over it.
+
