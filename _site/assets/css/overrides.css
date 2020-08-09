@@ -44,7 +44,7 @@ padding-bottom: 1rem;
  #open_button,#close_button {
  display:none;
  }
- 
+
  /* why doesn't tachyons do this automatically? */
 .grow-1
 {flex-grow:1;}
@@ -62,3 +62,29 @@ padding-bottom: 1rem;
 {flex-grow:3;}
 .shrink-4
 {flex-grow:4;}
+
+.mt-auto
+{margin-top: auto;}
+.mb-auto
+{margin-bottom: auto;}
+.ml-auto
+{margin-left: auto;}
+.mr-auto
+{margin-right: auto;}
+.mv-auto
+{margin-top: auto; margin-bottom: auto;}
+.mh-auto
+{margin-left: auto; margin-right: auto;}
+
+.pt-auto
+{padding-top: auto;}
+.pb-auto
+{padding-bottom: auto;}
+.pl-auto
+{padding-left: auto;}
+.pr-auto
+{padding-right: auto;}
+.pv-auto
+{padding-top: auto; padding-bottom: auto;}
+.ph-auto
+{padding-left: auto; padding-right: auto;}

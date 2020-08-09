@@ -5,29 +5,32 @@ title: Lunar Linux
 ---
 
 
-<nav id="navigation" class="fixed w-100 top-0">
+<nav id="navigation" class="w-100 bg-white-70 fixed top-0 relative-ns flex flex-row justify-center items-center">
 <!--checkbox hack for hamburger menu at small sizes-->  
-<input id="menu_toggle" type="checkbox" class="" />
-<label id="open_button" for="menu_toggle" class="f1 ph3 pv2 dark-gray bg-moon-gray">&#43;</label>
-  <div id="menu_items" class="w-100 bg-moon-gray flex flex-column flex-row-ns items-center">
+<input id="menu_toggle" type="checkbox" class="dn" />
+<label id="open_button" for="menu_toggle" class="f1 ph3 pv2">&#43;</label>
+  <div id="menu_items" class="w-75 flex flex-row-ns justify-end-ns items-center-ns">
   <!--checkbox hack for hamburger menu-->
-  <label id="close_button" for="menu_toggle" class="ph3 f1 dark-gray self-start">&#215;</label>
+      <label id="close_button" for="menu_toggle" class="f1 ph3 pv2 dark-gray self-start">&#215;</label>
+      
+      <a class="w-100 w-auto-ns link ph3 pv2 bg-animate hover-bg-near-white hover-white mr-auto" href="https://tbeckerson.github.io/lunar-website/">
+      <img src="./assets/images/icon-01.png" class="mw2" />
+      </a>
     {% for item in site.data.navigation %}
-      <a class="w-100 w-auto-ns link underline-hover f6 tc f5-m f4-l pa3 dark-gray bg-animate hover-bg-dark-gray hover-moon-gray" href="{{ item.link }}">
+      <a class="w-100 w-auto-ns link underline-hover pa3 f6 f5-m f4-l dark-gray bg-animate hover-bg-dark-blue hover-white" href="{{ item.link }}">
         {{ item.name }}
       </a>
     {% endfor %}
   </div>
 </nav>
 
-<header id="masthead" class="w-100 vh-100 bg-black-30 flex flex-column items-center justify-center">
-  <img src="./assets/images/logo-02b.png" class="w-75 w-two-thirds-m w-third-l" alt="The Lunar Linux logo - a rockhead penguin shillouette in front of a crescent moon."/>
-  <h1 class="moon-gray tracked tc">A source-based Linux distribution</h1>
+<header id="masthead" class="w-100 vh-100 bg-white-50 flex flex-column items-center justify-center">
+  <img src="./assets/images/logo_tests/logo_test-02.png" class="w-75 w-two-thirds-m w-third-l" alt="The Lunar Linux logo - a rockhead penguin shillouette in front of a crescent moon."/>
+  <h1 class="navy tracked tc">A source-based Linux distribution</h1>
 </header>
 
-<main id="content-wrapper" style="background-image:url('./assets/images/bg-05.jpg')" class="bg-center cover w-100 h-100">
-
-<section id="about" class="bg-moon-gray ph2 pv5 flex flex-column items-center justify-center">
+<main id="content-wrapper" style="background-image:url('./assets/images/bg-05.jpg')" class="bg-center cover w-100">
+<section id="about" class="w-100 bg-light-gray ph2 pv5 flex flex-column items-center justify-start">
 <div class="tracked w-100 w-50-ns">
 {% capture about_include %}
 {% include about.md %}
@@ -36,7 +39,30 @@ title: Lunar Linux
 </div>
 </section>
 
-<section id="applications" class="bg-black-70 moon-gray ph2 pv5 flex flex-column items-center justify-center">
+<section id="logos" class="w-100 bg-white ph2 pv5 flex flex-column justify-start items-center">
+ 
+
+<div class="tracked w-100 w-50-ns">
+  <h1>LOGO TESTS</h1>
+  <p>there's seven logos, and each can easily have the colours changed as needed. Right now, they're all using the two blues from the original logo, plus a darker blue for emphasis when needed.</p>
+  <p>I went through three phases of design - I started with a lunar lander, then the rockhead profile, then the crescent moon. The connection of the visuals are to the name <i>Lunar Linux:</i></p>
+  <ul>
+  <li>the crescent is connected to the <i>lunar</i> name.</li>
+  <li>the penguin is part of the Linux tradition.</li>
+  </ul> 
+  <p>The lander didn't have a direct connection, so I stopped developing it as a standalone logo element. But I do like it as a logo, and it could be used elsewhere in the site.</p>
+</div>
+<div class="tracked w-100 flex flex-wrap justify-around items-center">
+{% for item in site.data.logos %}
+    <figure class="tc w-50 pa5">
+    <img src="./assets/images/logo_tests/{{ item.image }}" alt="{{ item.name }}" class="">
+    <figcaption>{{ item.comment }}</figcaption>
+    </figure>
+{% endfor %}
+</div>
+</section>
+
+<section id="applications" class="bg-white-70 ph2 pv5 flex flex-column items-center justify-start">
 <div class="tracked w-100 w-50-ns">
 {% capture apps_include %}
 {% include applications.md %}
@@ -45,7 +71,7 @@ title: Lunar Linux
 </div>
 <div class="tracked w-100 w-66-m w-50-l flex flex-wrap justify-around">
 {% for item in site.data.apps %}
-    <figure class="pa2 tc w-33">
+    <figure class="pa2 tc w-50 w-33-ns">
     <img src="./assets/images/apps/{{ item.icon }}" alt="{{ item.name }}" class="">
     <figcaption>{{ item.name }}</figcaption>
     </figure>
@@ -53,7 +79,8 @@ title: Lunar Linux
 </div>
 </section>
 
-<section id="download" class="bg-moon-gray ph2 pv5 flex flex-column items-center justify-center">
+
+<section id="download" class="bg-light-gray ph2 pv5 flex flex-column items-center justify-start">
 <div class="tracked w-100 w-50-ns">
 {% capture dl_include %}
 {% include download.md %}
@@ -63,7 +90,7 @@ title: Lunar Linux
 </section>
 </main>
 
-<footer id="links" class="bg-black-70 moon-gray ph2 pv5 tracked flex flex-column items-center justify-center">
+<footer id="links" class="bg-white-50 ph2 pv5 tracked flex flex-column items-center justify-start">
 <div class="tracked w-100 w-50-ns">
 {% capture links_include %}
 {% include links.md %}

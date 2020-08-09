@@ -1,6 +1,5 @@
 # ABOUT
 
-_This is the most important part - I think it's valuable to decide what the target audience for Lunar will be. It's a source distro, so it's not for amatuers. Is it for older machines? Servers? Can programmers use it? Should it be a learning experience like LFS, or should it be your daily desktop?_
+_Updated based on our discussions: a brighter colour scheme, and the logo reuses the blues from the original logo. The navigation bar is reworked a bit as well._
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
-Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.
+_I've also included some of my other logo designs, directly below. The colours can be changed quickly if you ask._
