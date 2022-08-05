@@ -1,30 +1,32 @@
 ---
 layout: main
 title: Lunar Linux - Home
+contact: column
 ---
 
 {% include navbar.html %}
 <header id="" class="parallax vh-100">
     <section id="bg-stars" class="plx-back-4 z-1 vh-75 flex items-start justify-center cover ani-fade-in ani-05s"  style="background-image:url(assets/lunar_bg-stars.svg);">
     </section>
-    <section id="bg-moon" class="plx-back-2 z-2 vh-75 cover flex items-start justify-center ani-fade-in ani-05s"  style="background-image:url(assets/lunar_bg-moon-dark.svg); top:50%;">
+    <section id="bg-moon" class="plx-back-2 z-2 vh-75 cover flex items-start justify-center bg-middle ani-fade-in ani-05s"  style="background-image:url(assets/lunar_bg-moon-dark.svg); top:50%;">
     </section>
     <section id="title card" class="plx-back-1 z-3 flex flex-column items-center justify-center ani-fade-in ani-15s" style="">
         <img class="w-50-l w-75-m" style="" src="assets/lunar_logo-full.svg" alt="shilouette of a rockhopper penguin in front of a crescent moon. Beside it are the words LUNAR LINUX" />
-        <p class="bg-red pa1 dark-gray">
+        <p class="bg-red pa1 dark-gray w-90 tc">
             TEST SITE - DO NOT USE! Go to https://lunar-linux.org
         </p>
     </section>
 </header>
 
 <main class="relative z-4">
-    <section id="download" class="bg-lunar-light pv5">
-    <p class="f2 font-archivo tracked tc">
+    <section id="download" class="bg-lunar-light pv5 flex flex-column items-center justify-start">
+    <p class="f2-m f3 font-archivo tracked tc">
         <a href="#" class="link underline-hover pv2 ph3 bg-lunar-dark hover-bg-moon-gray moon-gray hover-dark-gray br3 ba b--dark-gray" style="" >DOWNLOAD ISO</a>
     </p>
-    <p class="f4 font-maven tracked tc dark-gray">
+    <p class="f4-m f5 font-maven tracked tc dark-gray w-90">
         lunar-1.8.0-testing-20220804-x86_64.iso<br />
-        sha256: c26c065512805574cad8381f22658ef35180b022d732f22b9cbbbcde54bb23de
+        sha256: <br />
+        c26c065512805574cad8381f22658ef35180b022d732f22b9cbbbcde54bb23de
     </p>
     </section>
 {% include_relative about.html %}
