@@ -3,20 +3,16 @@ layout: main
 title: Lunar Linux - News
 ---
 
-{% include navbar.html %}
+{% include_relative navbar.html %}
 <header id="news" class="parallax vh-75 flex flex-column items-center justify-center">
     <section id="title card" class="plx-back-1 vh-75 w-100 flex flex-column items-center justify-center bg-middle cover bg-center ani-fade-in ani-15s" style="background-image:url(assets/space-penguin-01.svg);">
         <h1 class="f1 tracked-mega font-archivo moon-gray">NEWS</h1>
     </section>
 </header>
 
-<main class="relative flex flex-column items-center justify-start bg-lunar-light">
+<main class="relative flex flex-column items-center justify-start">
 {% for post in site.posts %}
-  <div id="{{ post.title }}_content" class="pv5 measure-wide anchor-lunar-dark font-maven" style="animation-name: fade-in; animation-duration: 1s;">
-    <h2 class="lunar-dark font-archivo">{{ post.title | upcase }}</h2>
-    <h3 class="lunar-dark font-archivo">{{ post.date | date: '%B %d %Y' }}</h3>
   {{ post }}
-  </div>
-</div>
 {% endfor %}
 </main>
+{% include_relative contact.html %}

@@ -3,7 +3,7 @@ layout: main
 title: Lunar Linux - Home
 ---
 
-{% include navbar.html %}
+{% include_relative navbar.html %}
 <header id="" class="parallax vh-100">
     <section id="bg-stars" class="plx-back-4 z-1 vh-75 flex items-start justify-center cover ani-fade-in ani-05s"  style="background-image:url(assets/lunar_bg-stars.svg);">
     </section>
@@ -28,5 +28,5 @@ title: Lunar Linux - Home
     </p>
     </section>
 {% include_relative about.html %}
-{% include_relative contact.html %}
 </main>
+{% include_relative contact.html %}
