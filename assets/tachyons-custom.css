@@ -62,13 +62,23 @@ p {
   }
 
 /* default colours and settings for all links inside markdown */
-.a-blue a:link {
+.a-light a:link {
 text-decoration: none;
 color: #a0a0f0;
 }
-.a-blue a:hover {
+.a-light a:hover {
 text-decoration: underline;
 color: #a0a0f0;
+}
+
+/* default colours and settings for all links inside markdown */
+.a-dark a:link {
+text-decoration: none;
+color: #3030f0;
+}
+.a-dark a:hover {
+text-decoration: underline;
+color: #3030f0;
 }
 
 /* tachyons doesn't have these normally ? */
