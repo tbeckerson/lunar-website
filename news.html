@@ -11,8 +11,6 @@ title: Lunar Linux - News
 </header>
 
 <main class="relative flex flex-column items-center justify-start">
-{% for post in site.posts %}
-  {{ post }}
-{% endfor %}
+{% include post.html %}
 </main>
 {% include_relative contact.html %}
