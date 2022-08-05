@@ -11,6 +11,14 @@ title: Lunar Linux - News
 </header>
 
 <main class="relative z-2 flex flex-column items-center justify-start bg-red">
-{% include post.html %}
+{% for post in site.posts %}
+<div id="{{ post.title }}_container" class="pv5 w-100 {{ post.bg-colour }} flex flex-column items-center justify-start">
+    <div id="{{ post.title }}_content" class="measure-wide font-maven {{ post.tx-colour }} anchor-{{ post.link-colour }}" style="">
+        <h2 class="font-archivo">{{ post.title | upcase }}</h2>
+        <h3 class="font-archivo">{{ post.date | date: '%B %d %Y' }}</h3>
+      {{ post }}
+     </div>
+</div>
+{% endfor %}
 </main>
 {% include_relative contact.html %}
