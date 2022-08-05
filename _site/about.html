@@ -1,0 +1,9 @@
+<section id="about" class="pv5 flex flex-column items-center justify-start bg-lunar-dark near-white">
+  <div class="measure font-maven">
+    <h1 class="f1 font-archivo tc tracked">ABOUT</h1>
+{% capture about_section %}
+  {% include about.md %}
+{% endcapture %}
+{{ about_section | markdownify }}
+  </div>
+</section>

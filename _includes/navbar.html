@@ -1,0 +1,6 @@
+<nav id="main_nav" class="font-archivo w-100 relative top-0 z-999 bg-lunar-light tracked flex items-center justify-start">
+<a href="https://lunar-linux.org/" class="pa3 b bg-animate bg-lunar-light hover-bg-lunar-dark mr3"><img src="{{ base.url }}assets/lunar_logo-icon-white.svg" alt="main menu" class="w2" style=""/></a>
+{% for item in site.data.site_menu %}
+        <a href="{{ item.link }}" class="b bg-animate underline-hover hover-bg-lunar-dark hover-moon-gray lunar-dark link pa3 br1 f5">{{ item.name | upcase }}</a>
+{% endfor %}
+</nav>
