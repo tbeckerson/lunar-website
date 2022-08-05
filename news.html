@@ -4,13 +4,13 @@ title: Lunar Linux - News
 ---
 
 {% include navbar.html %}
-<header id="news" class="parallax vh-75 flex flex-column items-center justify-center">
-    <section id="title card" class="plx-back-1 vh-75 w-100 flex flex-column items-center justify-center bg-middle cover bg-center ani-fade-in ani-15s" style="background-image:url(assets/space-penguin-01.svg);">
+<header id="news" class="parallax vh-75 z-1">
+    <section id="title card" class="plx-back-1 vh-100 w-100 flex flex-column items-center justify-center bg-middle cover ani-fade-in ani-15s" style="background-image:url(assets/space-penguin-01.svg);">
         <h1 class="f1 tracked-mega font-archivo moon-gray">NEWS</h1>
     </section>
 </header>
 
-<main class="relative flex flex-column items-center justify-start">
-{% include_relative post.html %}
+<main class="relative z-2 flex flex-column items-center justify-start bg-red">
+{% include post.html %}
 </main>
 {% include_relative contact.html %}

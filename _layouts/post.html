@@ -1,7 +1,0 @@
-{% for post in site.posts %}
-<div id="{{ post.title }}_content" class="pv5 measure-wide {{ page.bg-colour }} {{ page.tx-colour }} font-maven" style="">
-        <h2 class="lunar-dark font-archivo">{{ post.title | upcase }}</h2>
-        <h3 class="lunar-dark font-archivo">{{ post.date | date: '%B %d %Y' }}</h3>
-      {{ post }}
-     </div>
-{% endfor %}
