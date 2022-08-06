@@ -1,0 +1,19 @@
+<footer id="contact" class="relative pv5 flex flex-column items-center justify-start near-white cover bg-near-black bg-bottom bg-fixed z-5" style="background-image:url(assets/{{ page.contact-bg }}-penguin-01.svg)";>
+  <div class="font-maven tc w-90 w-50-l">
+    <h1 class="f1 font-archivo tracked">CONTACT</h1>
+{% capture contact_section %}
+  {% include contact.md %}
+{% endcapture %}
+{{ contact_section | markdownify }}
+  </div>
+  
+<div class="flex flex-{{ page.contact }} items-center justify-around font-maven tc pv2">
+{% for item in site.data.contact_links %}
+  <a class="br3 near-white link bg-animate hover-bg-lunar-dark hover-lunar-light" href="{{ item.link }}">
+    <figure><img src="{{ item.src }}" alt="{{ item.alt }}" class="w4" />
+    <figcaption class="f3">{{ item.name }}</figcaption>
+    </figure>
+  </a>
+{% endfor %}
+  
+</footer>
