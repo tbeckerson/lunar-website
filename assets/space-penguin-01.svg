@@ -105,7 +105,7 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="793.91497"
+     inkscape:cy="308.16436"
      inkscape:cx="775.63403"
      inkscape:zoom="0.57436882"
      inkscape:pageshadow="0"
@@ -123,7 +123,13 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1"
-     transform="translate(0,-69.440651)"><g
+     transform="translate(0,-69.440651)"><rect
+       style="fill:#1a1a1a;fill-opacity:0.85;stroke:none;stroke-width:6.74948;paint-order:stroke fill markers"
+       id="rect409"
+       width="2048"
+       height="820"
+       x="0"
+       y="69.440651" /><g
        id="g409"><rect
          style="fill:#1a1a1a;fill-opacity:1;stroke-width:4.74245;paint-order:stroke fill markers"
          id="rect1"
@@ -527,7 +533,7 @@
          cy="805.96991"
          r="5" /></g><g
        id="g377"
-       transform="matrix(0.59670204,0,0,0.59670204,1451.2436,236.99462)"><g
+       transform="matrix(0.51675912,0.29835102,-0.29835102,0.51675912,1446.7148,808.4527)"><g
          id="g376"><ellipse
            style="fill:#cccccc;fill-opacity:1;stroke:#4d4d4d;stroke-width:7.99999;paint-order:stroke fill markers"
            id="path373"
@@ -692,10 +698,4 @@
          ry="39.190418" /><path
          id="ellipse13"
          style="fill:#8c8c8c;fill-opacity:1;stroke-width:13.134;paint-order:stroke fill markers"
-         d="m -2130.1408,-494.06709 a 419.7558,419.72986 0 0 1 42.9082,184.63867 419.7558,419.72986 0 0 1 -419.7559,419.72851 419.7558,419.72986 0 0 1 -121.8769,-18.351565 388.52399,388.5 0 0 0 208.7637,60.970715 388.52399,388.5 0 0 0 388.5234,-388.5 388.52399,388.5 0 0 0 -98.5625,-258.48633 z" /></g><rect
-       style="fill:#1a1a1a;fill-opacity:0.85;stroke:none;stroke-width:6.74948;paint-order:stroke fill markers"
-       id="rect409"
-       width="2048"
-       height="820"
-       x="0"
-       y="69.440651" /></g></svg>
+         d="m -2130.1408,-494.06709 a 419.7558,419.72986 0 0 1 42.9082,184.63867 419.7558,419.72986 0 0 1 -419.7559,419.72851 419.7558,419.72986 0 0 1 -121.8769,-18.351565 388.52399,388.5 0 0 0 208.7637,60.970715 388.52399,388.5 0 0 0 388.5234,-388.5 388.52399,388.5 0 0 0 -98.5625,-258.48633 z" /></g></g></svg>

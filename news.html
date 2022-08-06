@@ -2,11 +2,12 @@
 layout: main
 title: Lunar Linux - News
 contact: row
+contact-bg: space
 ---
 
 {% include navbar.html %}
-<header id="news" class="parallax vh-75 z-1">
-    <section id="title card" class="plx-back-1 vh-100 w-100 flex flex-column items-center justify-center bg-middle cover bg-middle ani-fade-in ani-15s" style="background-image:url(assets/space-penguin-01.svg);">
+<header id="news" class="z-1">
+    <section id="title card" class="pv5 w-100 flex flex-column items-center justify-center bg-dark-gray" style="">
         <h1 class="f1 tracked-mega font-archivo moon-gray">NEWS</h1>
     </section>
 </header>
@@ -14,7 +15,7 @@ contact: row
 <main class="relative z-2 flex flex-column items-center justify-start bg-red">
 {% for post in site.posts %}
 <div id="{{ post.title }}_container" class="pv5 w-100 {{ post.bg-colour }} flex flex-column items-center justify-start">
-    <div id="{{ post.title }}_content" class="measure-wide font-maven {{ post.tx-colour }} a-{{ post.link-colour}} w-90" style="">
+    <div id="{{ post.title }}_content" class="font-maven {{ post.tx-colour }} a-{{ post.link-colour}} w-90 w-50-l" style="">
         <h2 class="font-archivo">{{ post.title | upcase }}</h2>
         <h3 class="font-archivo">{{ post.date | date: '%B %d %Y' }}</h3>
       {{ post }}
