@@ -6,7 +6,7 @@
 :root {
     --dark: #19314d;
     --light: #698aaf;
-    --fontsize:clamp(16px,calc(16px + 1vw),18px);
+    --fontsize:clamp(14pt,calc(14pt + 1.5vw),18pt);
     }
 
 /*  */
