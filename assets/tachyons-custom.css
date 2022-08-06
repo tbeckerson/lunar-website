@@ -6,9 +6,10 @@
 :root {
     --dark: #19314d;
     --light: #698aaf;
-    --fontsize:clamp(14px,calc(14px + 1vw),18px);
+    --fontsize:clamp(16px,calc(16px + 1vw),18px);
     }
 
+/*  */
 /* fonts
  * The @import gives the font a name and file location for the browser to use. The .font-* class is for inserting the code into the .html file
  */
@@ -44,6 +45,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   perspective: 1px;
+  font-size: var(--fontsize);
   }
 
 p {
@@ -500,16 +502,16 @@ animation-name: fade-in-left-wide;
 }
   
 .plx-back-1   {
-  transform: translate3D(0,0,-0.5px) scale(1.6);
+  transform: translate3D(0,0,-0.5px) scale(1.5);
 }
 .plx-back-2  {
-  transform: translate3D(0,0,-1px) scale(2.1);
+  transform: translate3D(0,0,-1px) scale(2.0);
 }
 .plx-back-3  {
-  transform: translate3D(0,0,-1.5px) scale(3.6);
+  transform: translate3D(0,0,-1.5px) scale(3.5);
 }
 .plx-back-4  {
-  transform: translate3D(0,0,-2px) scale(4.1);
+  transform: translate3D(0,0,-2px) scale(4.0);
 }
 
 /* why u no have grid layout??? */
